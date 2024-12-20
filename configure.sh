@@ -8,6 +8,6 @@ run_argo(){
 }
 #run_argo
 nohup /app/backup2gh &
-sleep 30
-nohup /app/dashboard > output.log 2>&1 &
+#sleep 30
+nohup /app/dashboard &
 nginx -g 'daemon off;'
