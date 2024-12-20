@@ -13,7 +13,7 @@ RUN curl -L "https://github.com/laboratorys/backup-to-github/releases/download/v
     && rm backup-to-github.tar.gz \
     && chmod +x backup2gh
 
-ARG NEZHA_VERSION=1.2.6
+ARG NEZHA_VERSION=1.2.7
 RUN curl -L "https://github.com/nezhahq/nezha/releases/download/v${NEZHA_VERSION}/dashboard-linux-amd64.zip" -o dashboard-linux-amd64.zip \
     && unzip dashboard-linux-amd64.zip \
     && mv dashboard-linux-amd64 dashboard \
